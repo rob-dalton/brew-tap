@@ -7,6 +7,8 @@ class Awspot < Formula
   sha256 "1c259404a58a58e10fa9c006f89ff973726d42375e3cb710adc9c1505a61c99b"
   version "0.1" 
 
+  depends_on "python"
+
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/75/43/700260807978c5abfe4d687b6c0cca2b085a7542eb438aeacb2f73bb10e7/boto3-1.7.48.tar.gz"
     sha256 "c5a52cb93f7ae28e960810cb69d1fc8a9d00c1f122a681d7454a4d70e42dd5de"
