@@ -3,8 +3,8 @@ class Awspot < Formula
 
   desc "A command line tool for managing AWS Spot Resources."
   homepage "https://github.com/rob-dalton/awspot"
-  url "https://github.com/rob-dalton/awspot/blob/master/awspot-0.1.tar.gz"
-  sha256 "2c51107d1a0a68faa5cee2c0db26ace163fd4ab1709eae345cf909c4cef451de"
+  url "https://github.com/rob-dalton/awspot/raw/master/awspot-0.1.tar.gz"
+  sha256 "40722513df010eb9aa0d8f0dffe8152792a1cb56ad8437aceb6953d167e9d90e"
   version "0.1" 
 
   resource "boto3" do
