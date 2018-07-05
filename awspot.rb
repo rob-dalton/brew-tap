@@ -46,6 +46,7 @@ class Awspot < Formula
 
   def install
     virtualenv_install_with_resources
+    system "./configure", "--prefix=#{prefix}"
     system "python", "install.py"
     bin.install "awspot"
   end
