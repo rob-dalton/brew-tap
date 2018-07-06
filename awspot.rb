@@ -8,7 +8,6 @@ class Awspot < Formula
   version "0.1" 
 
   def install
-    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
     bin.install "awspot"
   end
