@@ -9,9 +9,13 @@ class Awspot < Formula
 
   def install
     ENV.deparallelize
-    prefix.install "ec2.py", Dir["./managers/*"]
+    prefix.install "ec2.py", "managers"
     system("python", "generate_script.py", "--prefix=#{prefix}")
     bin.install "awspot"
+  end
+
+  def post_install 
+    system("chmod", "0555", "#{prefix}/bin/awspot")
   end
 
 end 
