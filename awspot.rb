@@ -8,6 +8,8 @@ class Awspot < Formula
   version "0.1" 
 
   def install
+    ENV.deparallelize
+    prefix.install "ec2.py", Dir["./managers/*"]
     system("python", "generate_script.py", "--prefix=#{prefix}")
     bin.install "awspot"
   end
