@@ -8,7 +8,7 @@ class Awspot < Formula
   version "0.1" 
 
   def install
-    system "make", "script", "--prefix=#{prefix}"
+    system("python", "generate_script.py", "--prefix=#{prefix}")
     bin.install "awspot"
   end
 
